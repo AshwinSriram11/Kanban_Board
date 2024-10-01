@@ -1,9 +1,13 @@
+import Navbar from "./components/Navbar";
+import Data from "./Data";
 
 function App() {
+  const url = 'https://api.quicksell.co/v1/internal/frontend-assignment' ;
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Data url={url}/>
+      <Navbar />
+    </>
   );
 }
 
